@@ -18,7 +18,7 @@ export class MealComponent implements OnInit {
   filteredOptions: Observable<string[]>;
   items: FirebaseListObservable<Product[]>;
   foods = [];
-
+  _ref: any;
 
   dataSource;
   constructor(db: AngularFireDatabase) {
@@ -38,6 +38,10 @@ export class MealComponent implements OnInit {
       return this.foods.filter(option =>
         option.name.toLowerCase().indexOf(val.toLowerCase()) === 0);
     }
+  }
+
+  onMealRemove(event) {
+    this._ref.destroy();
   }
 }
 

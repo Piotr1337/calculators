@@ -11,6 +11,10 @@ body{
     margin-left: auto;
 }
 
+.mat-toolbar .mat-toolbar-row{
+    justify-content: space-between;
+}
+
 .flex{
     display: flex;
 }

@@ -26,6 +26,7 @@ export class CaloriesCalculatorComponent implements OnInit {
     const factory = this.componentFactoryResolver.resolveComponentFactory(MealComponent);
     const ref = this.appMeal.viewContainerRef.createComponent(factory);
     ref.changeDetectorRef.detectChanges();
+    ref.instance._ref = ref;
   }
 
 }

@@ -1,3 +1,7 @@
 .mat-option {
     font-size: 12px;
 }
+
+.remove-meal{
+    cursor: pointer;
+}
