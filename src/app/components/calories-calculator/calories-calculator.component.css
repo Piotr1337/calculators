@@ -1,0 +1,36 @@
+.summary-table-container {
+    flex-direction: column;
+    max-width: 800px;
+    flex: 1 0 0;
+    background-color: #6B7A8F;
+    color: #fff;
+    padding: 20px;
+}
+
+.summary-table-container table {
+    width: 100%;
+}
+
+.summary-table-container th {
+    padding-bottom: 14px;
+    text-align: right;
+    max-width: 100px;
+}
+
+.summary-table-container td:nth-of-type(1){
+  text-align: center;
+}
+
+.summary-table-container td {
+    padding: 0 0 14px 20px;
+    text-align: right;
+}
+  
+.calory-calc-wrapper{
+    justify-content: center;
+}
+
+.calory-calc-header{
+    justify-content: left;
+}
+  

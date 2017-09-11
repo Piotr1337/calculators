@@ -1,3 +1,26 @@
-<p>
-  calories-calculator works!
-</p>
+<div class="container">
+    <div class="calory-calc-header flex">
+        <button md-raised-button (click)="onAddMeal()">Dodaj posiłek</button>
+    </div>
+    <ng-template appMeal></ng-template>
+    <div class="calory-calc-wrapper flex">
+        <div class="summary-table-container flex">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>KALORIE</th>
+                    <th>BIAŁKO</th>
+                    <th>WĘGLOWODANY</th>
+                    <th>TŁUSZCZE</th>
+                </tr>
+                <tr>
+                    <td>Suma dobowa</td>
+                    <td>0,0 kcal</td>
+                    <td>0,0 g</td>
+                    <td>0,0 g</td>
+                    <td>0,0 g</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
